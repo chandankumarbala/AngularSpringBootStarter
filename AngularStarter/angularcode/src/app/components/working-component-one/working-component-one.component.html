@@ -1,0 +1,32 @@
+<div class="container text-center">    
+    <h3>Working component one</h3><br>
+    <div class="row">
+      <div class="col-sm-4">
+       
+        <p>
+          
+          <a href="/link">Go to working-component-two</a>
+          <br>
+          <button (click)="getDataFromSpring()">Load machines</button>
+        </p>
+      </div>
+      <div class="col-sm-4"> 
+        <h3 *ngIf="restData">Machines:</h3>
+        <h4 *ngIf="!restData">Machines Will be loaded here</h4>
+        <div *ngIf="restData">
+            <ul >
+                <li *ngFor="let machine of restData.machines">Laptop Id: {{machine.id}}, Model:{{machine.model}},Manufactured By:{{machine.manufactured}}</li>
+            </ul>
+        </div>  
+      </div>
+      <div class="col-sm-4">
+        <div class="well">
+         <p >Some text..</p>
+        </div>
+        <div class="well">
+         <p>Some text..</p>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  
