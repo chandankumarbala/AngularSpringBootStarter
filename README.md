@@ -1,4 +1,4 @@
-#Read this to create the set up env
+# Read this to create the set up env
 
 1)Install `npm` for windows
 2)Install `angular-cli` using npm `npm install @angular/cli@latest`
@@ -9,7 +9,7 @@
 7)Import project in STS as `Existing maven project` point to the cloaned folder containing pom.xml.
 8)Open the `angularcode` folder in `visual code` IDE from the cloand project folder.
 
-#Execution
+# Execution
 
 1)Run  `mvn clean install` in STS/Console to download all dependencies.
 2)Run `mvn clean spring-boot:run` to start the java server at `8080` port.
